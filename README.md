@@ -58,7 +58,7 @@ Sistem genel olarak çalışmaktadır, ancak bazı durumlarda vektörel kütüph
 
 - **Soru:** What is the most used IP address?
 
-- **Faiss Dosyasından Alınan Çıktı:**
+- **Faiss Dosyasından Alınan Çıktı:**(Tam performans alamadığım kısım)
     - 188.226.241.38 2019-01-23 14:04:10+03:30 GET /site/enamad HTTP/1.1
     - 178.252.147.90 2019-01-23 14:04:29+03:30 GET /site/enamad HTTP/1.1
     - 37.148.18.46 2019-01-26 19:48:48+03:30 GET /site/enamad HTTP/1.1
