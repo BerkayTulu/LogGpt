@@ -62,7 +62,7 @@ def query_data(query):
     query_vector = bert_encode([query])[0].astype('float32')
 
     # FAISS index üzerinde sorgulama yapma
-    k = 10  # En yakın 10 sonucu bulalım
+    k = 10  # kaç sonuç bulacağını yazıyoruz
     distances, indices = index.search(np.array([query_vector]), k)
 
     # Sonuçları işleme
@@ -70,7 +70,7 @@ def query_data(query):
     for idx in indices[0]:
         results.append(log_df.iloc[idx]['Combined_Text'])
 
-    # İlk 10 sonucu FAISS ile döndürme
+    # sonucu FAISS ile döndürme
     faiss_output = "\n\n".join(results)
 
     # LLM ile FAISS sonucu üzerinde daha ileri işlem yapma
